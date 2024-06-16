@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Purchase Order System</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <header>
+
+        <h1>Assignment 2 CSCI 4140</h1>
+
+    </header>
+    <main>
+
+        <section id="partsSection">
+
+            <h2>Parts</h2>
+
+            <button onclick="listParts113()">List Parts</button> 
+
+            <div id="partsList"></div>
+
+        </section>
+
+        <section id="poSection">
+
+            <h2>Purchase Orders</h2>
+
+            <button onclick="listPOs113()">List POs</button> 
+
+            <div id="poList"></div>
+
+        </section>
+
+        <section id="poDetailsSection">
+
+            <h2>Purchase Order Details</h2>
+
+            <input type="text" id="poNumber" placeholder="Enter PO Number">
+
+            <button onclick="getPODetails113()">Get PO Details</button> 
+
+            <div id="poDetails"></div>
+
+        </section>
+
+        <section id="preparePoSection">
+
+            <h2>Prepare PO</h2>
+
+            <input type="text" id="clientID" placeholder="Enter Client ID">
+
+            <input type="date" id="poDate">
+
+            <input type="number" id="quantity" placeholder="Enter Quantity">
+
+            <input type="text" id="partNumber" placeholder="Enter Part Number">
+
+            <button onclick="preparePO113()">Prepare PO</button> 
+
+            <div id="preparedPoNumber"></div>
+
+        </section>
+        
+        <section id="submitPoSection">
+
+            <h2>Submit PO</h2>
+
+            <input type="text" id="poNumberSubmit" placeholder="Enter PO Number">
+
+            <button onclick="submitPO113()">Submit PO</button>
+
+            <div id="submitStatus"></div>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <button onclick="showSection113('partsSection')">Go to Parts</button> 
+
+        <button onclick="showSection113('poSection')">Go to POs</button> 
+
+        <button onclick="showSection113('poDetailsSection')">Go to PO Details</button> 
+
+        <button onclick="showSection113('preparePoSection')">Go to Prepare PO</button> 
+
+        <button onclick="showSection113('submitPoSection')">Go to Submit PO</button> 
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
